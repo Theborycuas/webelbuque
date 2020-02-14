@@ -4,4 +4,4 @@ from .models import Menu
 
 def menu(request):
     menus = Menu.objects.all()
-    return render(request, "menu/menu.html", {'menus':menus})
+    return render(request, "menu/menu.html")
