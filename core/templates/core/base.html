@@ -133,16 +133,16 @@
         <div class="col-xl-4 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
           <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
-              <div id="mapa" style="height: 300px;"></div>
+              <div id="map" style="height: 300px;"></div>
               <script>
                 function initMap() {
                   // The location of Uluru
                   var uluru = { lat: 0.9942674, lng: -79.5654575 };
                   // The map, centered at Uluru
-                  var mapa = new google.maps.Map(
-                    document.getElementById('mapa'), { zoom: 10, center: uluru });
+                  var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 10, center: uluru });
                   // The marker, positioned at Uluru
-                  var marker = new google.maps.Marker({ position: uluru, mapa: mapa });
+                  var marker = new google.maps.Marker({ position: uluru, map: map });
                 }
               </script>
               <!--Load the API from the specified URL
