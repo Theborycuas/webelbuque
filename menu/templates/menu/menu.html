@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Menú{% endblock %}
+
+{% block tema %}Food Menu{% endblock %}
+
+{% block subtema %}
+<p>El menú mas economico<br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
+{% endblock %}
+
+{% block content %}
+
+<!--================Food menu section start =================-->
+<section class="section-margin">
+  <div class="container">
+    <div class="section-intro mb-75px">
+      <h4 class="intro-title">Nuestro Menú</h4>
+      <h2>Lo mejor en Mariscos</h2>
+    </div>
+    <div class="row">
+      {% for menu in menus %}
+      <div class="col-lg-6">
+        <div class="media align-items-center food-card">
+          <img class="mr-3 mr-sm-4" src="{{menu.image.url}}" alt="" width="120" height="99">
+          <div class="media-body">
+            <div class="d-flex justify-content-between food-card-title">
+              <h4>{{menu.name}}</h4>
+              <h3 class="price-tag">${{menu.price}}</h3>
+            </div>
+            <p>{{menu.description}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--================Food menu section end =================-->
+
+
+
+<!--================CTA section start =================-->
+<section class="cta-area text-center">
+  <div class="container">
+    <h2>Disfruta de tus mariscos a orillas del mar</h2>
+    <p>Te esperamos en un lugar tranquilo, fresco y relajante.</p>
+    <a class="button" href="https://goo.gl/maps/J3LAtufdkWycqfAE9">Visitanos</a>
+  </div>
+</section>
+<!--================CTA section end =================-->
+
+
+{% endblock %}
