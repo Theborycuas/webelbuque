@@ -22,27 +22,9 @@
 
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
-                <div id="map" style="height: 480px;"></div>
-                <script>
-                    function initMap() {
-                        // The location of Uluru
-                        var uluru = { lat: 0.4942674, lng: -60.5654575 };
-                        // The map, centered at Uluru
-                        var map = new google.maps.Map(
-                            document.getElementById('map'), { zoom: 20, center: uluru });
-                        // The marker, positioned at Uluru
-                        var marker = new google.maps.Marker({ position: uluru, map: map });
-                    }
-                </script>
-                <!--Load the API from the specified URL
-                * The async attribute allows the browser to render the page while the API loads
-                * The key parameter will contain your own API key (which is not needed for this tutorial)
-                * The callback parameter executes the initMap() function
-                -->
-                <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC261ypm_oBkOWfGW6hQWXvjKPInyu5CE&callback=initMap">
-                    </script>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.217592106322!2d-79.56545218590735!3d0.9942727628932629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bb73da323469%3A0x3b707ee6b7ea5208!2sRestaurante%20%22El%20Buque%22!5e0!3m2!1ses!2sec!4v1581695159486!5m2!1ses!2sec" 
+                width="800" height="850" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  
             </div>
 
 
