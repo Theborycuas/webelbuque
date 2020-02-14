@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Cocineros{% endblock %}
+
+{% block tema %}Cocineros Talentosos{% endblock %}
+
+{% block subtema %}
+<p>From set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth
+  under replenish end</p>
+{% endblock %}
+
+{% block content %}
+
+<!--================Chef section start =================-->
+<section class="section-margin">
+  <div class="container">
+    <div class="section-intro mb-75px">
+      <h4 class="intro-title">Nuestro Personal</h4>
+      <h2>Miembros con talento y experiencia</h2>
+    </div>
+
+    <div class="row">
+      {% for chef in chefs %}
+      <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="chef-card">
+          <img class="card-img rounded-0" src="{{chef.image.url}}" alt="">
+          <div class="chef-footer">
+            <h4>{{chef.name}}</h4>
+            <p>{{chef.titulo}}</p>
+          </div>
+
+          <div class="chef-overlay">
+            <ul class="social-icons">
+              <li><a href="{{chef.facebook}}"><i class="ti-facebook"></i></a></li>
+              <li><a href="{{chef.instagram}}"><i class="ti-twitter-alt"></i></a></li>
+              <li><a href="{{chef.twitter}}"><i class="ti-skype"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--================Chef section end =================-->
+
+<!--================CTA section start =================-->
+<section class="cta-area text-center">
+  <div class="container">
+    <h2>Disfruta de tus mariscos a orillas del mar</h2>
+    <p>Te esperamos en un lugar tranquilo, fresco y relajante.</p>
+    <a class="button" href="https://goo.gl/maps/J3LAtufdkWycqfAE9">Visitanos</a>
+  </div>
+</section>
+<!--================CTA section end =================-->
+
+
+
+{% endblock %}
