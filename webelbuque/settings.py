@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'menu.apps.MenuConfig',
     'chef',
     'blog',
+    'contact',
 ]
 
 MIDDLEWARE = [
