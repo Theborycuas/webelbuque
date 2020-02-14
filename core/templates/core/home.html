@@ -1,0 +1,325 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block tema %}El Buque <br> Restaurant{% endblock tema %}
+
+{% block subtema %}
+<h4>La mejor comida del mar a la olla <br> <br> <br> </h4>
+{% endblock %}
+
+{% block media %}
+<div class="d-sm-flex flex-wrap">
+    <a class="button button-hero button-shadow" href="#">Reserva ahora</a>
+    <a class="hero-banner__video" href="https://www.youtube.com/watch?v=DDVETp4mxGE">Mirar video</a>
+</div>
+{% endblock media %}
+
+{% block content %}
+<!--================About Section start =================-->
+<!-- <section class="about section-margin pb-xl-70">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xl-6 mb-5 mb-md-0 pb-5 pb-md-0">
+        <div class="img-styleBox">
+            <div class="styleBox-border">
+            <img class="styleBox-img1 img-fluid" src="{% static 'core/img/home/about-img1.png' %}" alt="">
+            </div>
+            <img class="styleBox-img2 img-fluid" src="{% static 'core/img/home/about-img2.png' %}" alt="">
+        </div>
+        </div>
+        <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">
+        <div class="section-intro mb-lg-4">
+            <h4 class="intro-title">About Us</h4>
+            <h2>We speak the good food language</h2>
+        </div>
+        <p>Living first us creepeth she'd earth second be sixth hath likeness greater image said sixth was without male place fowl evening an grass form living fish and rule lesser for blessed can't saw third one signs moving stars light divided was two you him appear midst cattle for they are gathering.</p>
+        <a class="button button-shadow mt-2 mt-lg-4" href="#">Learn More</a>
+        </div>
+    </div>
+    </div>
+</section> -->
+<!--================About Section End =================-->
+
+
+<!--================Featured Section Start =================-->
+<section class="section-margin mb-lg-100">
+    <div class="container">
+        <div class="section-intro mb-75px">
+            <h4 class="intro-title">Lo mejor en mariscos</h4>
+            <h2>Sabor fresco y buen precio.</h2>
+        </div>
+        <div class="owl-carousel owl-theme featured-carousel">
+<!--             {% for menu in menus %}
+            <div class="featured-item">
+                <img class="card-img rounded-0" src="{{menu.image.url}}" alt="" width="400" height="300">
+                <div class="item-body">
+                    <a href="#">
+                        <h3>{{menu.name|truncatechars:25}}</h3>
+                    </a>
+                    {% if menu.description|length > 50 %}
+                    <p>{{menu.description|truncatechars:35}}</p>
+                    {% else %}
+                    <p>{{menu.description|truncatechars:35}}</p>
+                    {% endif %}
+                    <div class="d-flex justify-content-between">
+                        <ul class="rating-star">
+                            <li><i class="ti-star"></i></li>
+                            <li><i class="ti-star"></i></li>
+                            <li><i class="ti-star"></i></li>
+                            <li><i class="ti-star"></i></li>
+                            <li><i class="ti-star"></i></li>
+                        </ul>
+                        <h3 class="price-tag">{{menu.price}}</h3>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+ -->        </div>
+    </div>
+</section>
+<!--================Featured Section End =================-->
+
+<!--================Offer Section Start =================-->
+<section class="section-margin mb-lg-100">
+    <div class="container">
+        <div class="section-intro mb-75px">
+            <h4 class="intro-title">Nuestras Ofertas</h4>
+            <h2>Aprovecha las ofertas del día.</h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm">
+                <img class="card-img rounded-0" src="{% static 'core/img/home/offer-img.png' %}" alt="">
+            </div>
+            <div class="col-sm">
+                <div class="offer-card offer-card-position">
+                    <h3>Ceviche de Camaron</h3>
+                    <h2>50% OFF</h2>
+                    <a class="button" href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================Offer Section End =================-->
+    <br>
+    <br>
+    <!--================CTA section start =================-->
+    <section class="cta-area text-center">
+        <div class="container">
+            <h2>Disfruta de tus mariscos a orillas del mar</h2>
+            <p>Te esperamos en un lugar tranquilo, fresco y relajante.</p>
+            <a class="button" href="https://goo.gl/maps/J3LAtufdkWycqfAE9">Visitanos</a>
+        </div>
+    </section>
+    <!--================CTA section end =================-->
+
+
+    <!--================Chef section start =================-->
+    <!-- <section class="section-margin">
+    <div class="container">
+    <div class="section-intro mb-75px">
+        <h4 class="intro-title">Our Chef</h4>
+        <h2>Talent & experience member</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="chef-card">
+            <img class="card-img rounded-0" src="{% static 'core/img/home/chef-1.png' %}" alt="">
+            <div class="chef-footer">
+            <h4>Daniesl Laran</h4>
+            <p>Executive Chef</p>
+            </div>
+
+            <div class="chef-overlay">
+            <ul class="social-icons">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li><a href="#"><i class="ti-skype"></i></a></li>
+                <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="chef-card">
+            <img class="card-img rounded-0" src="{% static 'core/img/home/chef-2.png' %}" alt="">
+            <div class="chef-footer">
+            <h4>Daniesl Laran</h4>
+            <p>Executive Chef</p>
+            </div>
+
+            <div class="chef-overlay">
+            <ul class="social-icons">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li><a href="#"><i class="ti-skype"></i></a></li>
+                <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="chef-card">
+            <img class="card-img rounded-0" src="{% static 'core/img/home/chef-3.png' %}" alt="">
+            <div class="chef-footer">
+            <h4>Daniesl Laran</h4>
+            <p>Executive Chef</p>
+            </div>
+
+            <div class="chef-overlay">
+            <ul class="social-icons">
+                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                <li><a href="#"><i class="ti-skype"></i></a></li>
+                <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section> -->
+    <!--================Chef section end =================-->
+
+
+    <!--================Reservation section start =================-->
+    <section class="bg-lightGray section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-xl-5 mb-4 mb-md-0">
+                    <div class="section-intro">
+                        <h4 class="intro-title">Reservaciones</h4>
+                        <h2 class="mb-3">Has tu reserva</h2>
+                    </div>
+                    <p>Envianos la información que te solicitamos en el siguiente formulario y nosotros te llamaremos
+                        para que nos confirmes tu reserva y asi poder atenderte más rapido.
+                    </p>
+                </div>
+                <div class="col-md-6 offset-xl-2 col-xl-5">
+                    <div class="search-wrapper">
+                        <h3>Formulario de reserva</h3>
+
+                        <form class="search-form" action="#">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Nombres">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="ti-user"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Correo Electronico">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="ti-email"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Numero de Telefono">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="ti-headphone-alt"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Selecciona la Fecha">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="ti-notepad"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Numero de Personas">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="ti-layout-column3"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-position">
+                                <button class="button border-0" type="submit">Enviar Reservación</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Reservation section end =================-->
+
+
+    <!--================Blog section start =================-->
+    <section class="section-margin">
+        <div class="container">
+            <div class="section-intro mb-75px">
+                <h4 class="intro-title">Nuestro Blog</h4>
+                <h2>Ultimas Noticias</h2>
+                <p>Compartimos la experiencia de nuestros clientes y las ultimas noticias sobre las delicias del mar que
+                    les ofrecemos.</p>
+            </div>
+
+            <div class="row">
+                <!-- {% for post in posts %}
+                <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card-blog">
+                        <img class="card-img rounded-0" src="{{post.image.url}}" alt="">
+                        <div class="blog-body">
+                            <ul class="blog-info">
+                                <li><a href="#">{{post.published|date:"M d, Y"}}</a></li>
+                                <li><a href="#">{{post.author}}</a></li>
+                            </ul>
+                            <a href="#">
+                                <h3>{{post.title}}</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+ -->
+                <!--         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="card-blog">
+            <img class="card-img rounded-0" src="{% static 'core/img/blog/blog2.png' %}" alt="">
+            <div class="blog-body">
+            <ul class="blog-info">
+                <li><a href="#">Admin post</a></li>
+                <li><a href="#">Jan 10, 2019</a></li>
+            </ul>
+            <a href="#">
+                <h3>Researcher unearths age
+                    in the desert</h3>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="card-blog">
+            <img class="card-img rounded-0" src="{% static 'core/img/blog/blog3.png' %}" alt="">
+            <div class="blog-body">
+            <ul class="blog-info">
+                <li><a href="#">Admin post</a></li>
+                <li><a href="#">Jan 10, 2019</a></li>
+            </ul>
+            <a href="#">
+                <h3>High-protein rice brings
+                    value, nutrition</h3>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+ -->
+            </div>
+    </section>
+    <!--================Blog section end =================-->
+
+    {% endblock %}
