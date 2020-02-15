@@ -1,1 +1,1 @@
-web: gunicorn webelbuque.wsgi
+web: gunicorn web_personal.wsgi
